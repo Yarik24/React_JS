@@ -1,6 +1,7 @@
 import Message from "./Message/Message";
 import { useState, useEffect } from "react";
 import InputForm from "./InputForm/InputForm";
+import Chats from "./Components/Chats/Chats";
 
 
 function App() {
@@ -17,8 +18,13 @@ function App() {
   
   return (
     <div className="App">
-      <Message messageList={messageList} />
-      <InputForm setMessageList={setMessageList} />
+      <Chats />
+      
+      <>
+        <Message messageList={messageList} />
+        <InputForm setMessageList={setMessageList} />
+      </>
+     
     </div>
   );
 }
