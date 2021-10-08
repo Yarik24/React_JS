@@ -1,7 +1,7 @@
 import Message from "./Message/Message";
 import { useState, useEffect } from "react";
 import InputForm from "./InputForm/InputForm";
-import Chats from "./Components/Chats/Chats";
+import Chats from "./Chats/Chats";
 
 
 function App() {
