@@ -22,7 +22,7 @@ function InputForm({ setMessageList }) {
     <form className="form">
       <TextField id="outlined-basic" label="Name" variant="outlined" size="small" required className="form_name" type="text" value={nameValue} onChange={(e) => setNameValue(e.target.value)}></TextField>
       <TextField id="outlined-basic" label="Message" variant="outlined" size="small" className="form_text" inputRef={inputRef} type="text" value={textValue} onChange={(e) => setTextValue(e.target.value)}></TextField>
-      <Button variant="contained" color="success" type="submit" className="form_submit" onClick={(e) => submitHandler(e)}>Send</Button>
+      <Button variant="contained" color="secondary" type="submit" className="form_submit" onClick={(e) => submitHandler(e)}>Send</Button>
     </form >
   );
 };
