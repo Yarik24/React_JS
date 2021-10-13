@@ -1,6 +1,8 @@
-.twit {
-  color: red;
-  text-align: center;
-  margin-top: 25%;
+.messege {
+  position: absolute;
+  width: 95vw;
+  height: 90vh;
+  overflow: auto;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */
