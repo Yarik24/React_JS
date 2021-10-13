@@ -1,8 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Chats from "./Chats/Chats";
-import Header from "./Header/Header";
-import Profile from "./Profile/Profile";
-import ChatMessages from "./ChatMessages/ChatMessages";
+import Router from "./Router/Router";
 
 
 function App() {
@@ -17,20 +13,7 @@ function App() {
   //   }
   //  }, [messageList]);
   
-  return (
-    <div className="App">
-      <Router>
-        <Route exact path="/" component={Header}></Route>
-        <Route exact path="/profile" component={Profile}></Route>
-        <Route exact path="/chats">
-          <Chats />
-        </Route>
-        <Route exact path="/chats/:id">
-          <ChatMessages />
-        </Route>
-      </Router>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
