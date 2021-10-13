@@ -1,4 +1,6 @@
-export const setCheckbox = () => ({
-  type: "SET_CHECKBOX",
-  payload: null,
+import CHANGE_NAME from "../Store/Types/ProfileTypes";
+
+export const setName = (name) => ({
+  type: CHANGE_NAME,
+  payload: name,
 });
