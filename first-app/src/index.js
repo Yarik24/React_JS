@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import Message from './Components/Message/Message';
-
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { Provider } from "react-redux";
+import { store } from "./Store";
+import App from "./Components/App";
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("app")
 );
-
