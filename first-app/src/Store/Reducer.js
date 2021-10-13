@@ -1,6 +1,6 @@
 const InitialState = { checkbox: false };
 
-function reducer(state = InitialState, action) {
+function Reducer(state = InitialState, action) {
   switch (action.type) {
     case "SET_CHECKBOX":
       return { ...state, checkbox: !state.checkbox };
@@ -9,4 +9,4 @@ function reducer(state = InitialState, action) {
   }
 }
 
-export default reducer;
+export default Reducer;
