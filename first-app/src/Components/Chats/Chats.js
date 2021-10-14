@@ -3,11 +3,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from '../Header/Header';
 import "./ChatStyle.css";
-import { addChat, deleteChat } from "../../Action/ChatsActions";
+import { addChat, deleteChat } from "../../Action/chatsActions";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 
 function Chats() {
 
+    document.title = "Chats";
     const [visible, setVisible] = useState(false);
     const [newChatName, setNewChatName] = useState("");
 
@@ -44,7 +45,8 @@ function Chats() {
                                mr: "10px",
                                bgcolor: "#8feb34",
                                fontWeight: "bold",
-                               border: "1px solid black",
+                               border: "2px solid green",
+                               mr: "10px"
                               }} 
                             > 
                              <Link to={`/chats/${el.id}`}>{el.name}</Link>
@@ -61,11 +63,11 @@ function Chats() {
                     : null}
                 </List>
                 <Button className="add-chat" onClick={handleOpen}>
-                  Добавить чат
+                  Add chat
                 </Button>
             </div>
             <Dialog open={visible} onClose={handleClose}>
-              <DialogTitle>Введите название нового чата</DialogTitle>
+              <DialogTitle>Enter the name of the new chat </DialogTitle>
               <TextField value={newChatName} onChange={handleChange} />
               <Button onClick={onAddChat} disabled={!newChatName}>
                  Submit

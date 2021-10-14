@@ -1,0 +1,12 @@
+.quotes {
+  position: absolute;
+  width: 99vw;
+  height: 85vh;
+  overflow: auto;
+}
+
+.quotes__p {
+  margin-left: 20px;
+  font-style: italic;
+}
+/*# sourceMappingURL=QuotesListStyle.css.map */

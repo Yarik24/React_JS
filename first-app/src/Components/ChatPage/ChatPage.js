@@ -18,6 +18,7 @@ function ChatPage() {
     (state) => state.messages.messageList[chatId],
     shallowEqual
     );
+    document.title = `${currentChat.name}`;
 
     return (
         <>

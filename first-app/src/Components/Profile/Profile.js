@@ -1,12 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
 import Header from "../Header/Header";
 import { useSelector, useDispatch, shallowEqual } from "react-redux";
-import { setName } from "../../Action/ProfileActions";
+import { setName } from "../../Action/profileActions";
 
 function Profile() {
   const name = useSelector((state) => state.profile.name, shallowEqual);
   const dispatch = useDispatch();
   const [value, setValue] = useState("");
+
+  document.title = "Profile";
 
   function submitHandler(e) {
     e.preventDefault();

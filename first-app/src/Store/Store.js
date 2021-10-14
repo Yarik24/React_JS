@@ -1,6 +1,7 @@
-import ProfileReducer from "./ProfileReducer";
-import ChatsReducer from "./ChatsReducer";
-import MessagesReducer from "./MessagesReducer";
+import profileReducer from "./profileReducer";
+import chatsReducer from "./chatsReducer";
+import messagesReducer from "./messagesReducer";
+import quotesReducer from "./quotesReducer";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
@@ -10,12 +11,14 @@ import storage from "redux-persist/lib/storage";
 const persistConfig = { // Cоздаем объект конфигурации для persist
   key: "React App",
   storage,
+  blacklist: ["quotes"]
 };
 
 const rootReducer = combineReducers({
-  profile: ProfileReducer,
-  chats: ChatsReducer,
-  messages: MessagesReducer,
+  profile: profileReducer,
+  chats: chatsReducer,
+  messages: messagesReducer,
+  quotes: quotesReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer); // оборачиваем редьюсеры в persist

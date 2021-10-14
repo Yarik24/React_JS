@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,IAAI;CAAG;;AAErB,AAAA,UAAU,CAAC;EACP,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;CAAG",
+    "sources": [
+        "QuotesListStyle.sass"
+    ],
+    "names": [],
+    "file": "QuotesListStyle.css"
+}
