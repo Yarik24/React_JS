@@ -1,31 +1,22 @@
 import './style.css'
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import addMessage from '../../Action/MessagesActions';
+import { botReply } from "..//..//Action/messagesActions";
 
-function Message({ chatId }) {
-
-  const messages = useSelector(
-    (state) => state.messages.messageList[chatId],
-    shallowEqual
-  );
+function Message({ chatId, messages }) {
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (chatId === "id0" && messages[messages.length - 1].author !== "Yarik") {
-      setTimeout(() => {
-        dispatch(
-          addMessage(chatId, "Don't write message", "Yarik")
-        );
-      }, 2000);
+      dispatch(botReply(chatId));
     }
   }, [messages]);
   
   return (
      <ul className="messege">
-      {messageList
-        ? messageList.map((el) => (
+      {messages
+        ? messages.map((el) => (
              <li key = {el.id} className="messege_item">
                 <p className="messege_item-name">{el.author + " say:"}</p>
                 <p className="messege_item-text">{el.text}</p>

@@ -1,10 +1,17 @@
-import { ADD_MESSAGE } from "../Store/Types/MessagesTypes";
+import { ADD_MESSAGE } from "../Store/Types/messagesTypes";
 
-const addMessage = (chatId, message, author) => ({
+ export const addMessage = (chatId, message, author) => ({
   type: ADD_MESSAGE,
   chatId,
   message,
   author,
 });
 
-export default addMessage;
+export const botReply = (chatId) => (dispatch) => {
+  setTimeout(() => {
+    dispatch(
+      addMessage(chatId, "Don't write", "Yarik")
+    );
+  }, 3000);
+};
+

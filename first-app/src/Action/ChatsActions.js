@@ -1,4 +1,4 @@
-import { ADD_CHAT, DELETE_CHAT } from "../Store/Types/ChatsTypes";
+import { ADD_CHAT, DELETE_CHAT } from "../Store/Types/chatsTypes";
 
 export const addChat = (name) => ({
   type: ADD_CHAT,

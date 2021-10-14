@@ -1,4 +1,4 @@
-import { ADD_CHAT, DELETE_CHAT } from "./Types/ChatsTypes";
+import { ADD_CHAT, DELETE_CHAT } from "./Types/chatsTypes";
 
 const InitialState = { chatList: [{ id: "id0", name: "Yarik" }] };
 let count = 0; 

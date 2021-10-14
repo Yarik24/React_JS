@@ -1,4 +1,4 @@
-import CHANGE_NAME from "../Store/Types/ProfileTypes";
+import CHANGE_NAME from "../Store/Types/profileTypes";
 
 export const setName = (name) => ({
   type: CHANGE_NAME,

@@ -1,8 +1,9 @@
 import InputForm from "../InputForm/InputForm";
 import Message from "../Message/Message";
-import { useParams, Redirect } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useSelector, shallowEqual } from "react-redux";
 import Header from "../Header/Header";
+import NotFound from "../NotFound/NotFound";
 
 
 function ChatPage() {
@@ -11,17 +12,24 @@ function ChatPage() {
         (state) => state.chats.chatList.find((el) => el.id === chatId),
         shallowEqual
     );
+
+    const author = useSelector((state) => state.profile.name, shallowEqual);
+    const messages = useSelector(
+    (state) => state.messages.messageList[chatId],
+    shallowEqual
+    );
+
     return (
         <>
             {currentChat ? (
                 <>
                     <Header />
                     <p>{currentChat.name}</p>
-                    <Message chatId={chatId} />
-                    <InputForm chatId={chatId} />
+                    <Message chatId={chatId} messages={messages} />
+                    <InputForm chatId={chatId} author={author} />
                 </>
             ) : (
-                   <Redirect to="/" />    
+                   <NotFound />    
             )};  
         </>
     );
