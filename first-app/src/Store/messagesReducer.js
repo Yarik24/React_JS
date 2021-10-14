@@ -1,45 +1,16 @@
-import { ADD_MESSAGE } from "./Types/MessagesTypes";
+import { UPDATE_MESSAGE } from "./Types/messagesTypes";
 
-const initialState = {
-  
-  messageList: {
-    ["id0"]: [
-      {
-        id: 0,
-        text: "Welcome chat!",
-        author: "Yarik",
-      },
-      {
-        id: 1,
-        text: "Attention!",
-        author: "Yarik",
-      },
-    ],
-  },
-};
+const initialState = { messageList: null };
 
-function messegesReducer(state = initialState, action) {
+function messagesReducer(state = initialState, action) {
   switch (action.type) {
-    case ADD_MESSAGE: {
-      const currentList = state.messageList[action.chatId] || [];
-      return {
-        ...state,
-        messageList: {
-          ...state.messageList,
-          [action.chatId]: [
-            ...currentList,
-            {
-              id: currentList.length,
-              text: action.message,
-              author: action.author,
-            },
-          ],
-        },
-      };
+    case UPDATE_MESSAGE: {
+      return { ...state, messageList: action.payload };
     }
+
     default:
       return state;
   }
 }
 
-export default messegesReducer;
+export default messagesReducer;

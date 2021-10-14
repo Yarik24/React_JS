@@ -6,7 +6,8 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage"; 
+import storage from "redux-persist/lib/storage";
+import userReducer from "./userReducer"
 
 const persistConfig = { // Cоздаем объект конфигурации для persist
   key: "React App",
@@ -18,7 +19,8 @@ const rootReducer = combineReducers({
   profile: profileReducer,
   chats: chatsReducer,
   messages: messagesReducer,
-  quotes: quotesReducer
+  quotes: quotesReducer,
+  user: userReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer); // оборачиваем редьюсеры в persist

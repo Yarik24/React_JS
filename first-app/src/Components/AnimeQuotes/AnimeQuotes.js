@@ -17,7 +17,7 @@ function AnimeQuotes() {
 
   useEffect(() => {
     if (error) {
-      setModalFlag(true);
+      setModalFlag((prev) => !prev);
     }
   }, [error]);
 

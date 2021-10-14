@@ -8,6 +8,7 @@ import NotFound from "../NotFound/NotFound.js";
 
 function ChatPage() {
     const { chatId } = useParams();
+    
     const currentChat = useSelector(
         (state) => state.chats.chatList.find((el) => el.id === chatId),
         shallowEqual
@@ -18,6 +19,7 @@ function ChatPage() {
     (state) => state.messages.messageList[chatId],
     shallowEqual
     );
+
     document.title = `${currentChat.name}`;
 
     return (

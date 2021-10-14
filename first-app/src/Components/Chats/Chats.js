@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import "./ChatStyle.css";
 import { addChat, deleteChat } from "../../Action/chatsActions";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { getMessages } from '../../Action/messagesActions';
 
 function Chats() {
 
@@ -14,6 +15,16 @@ function Chats() {
 
     const chats = useSelector((state) => state.chats.chatList, shallowEqual);
     const dispatch = useDispatch();
+  
+    useEffect(() => {
+      if (!chats) {
+        dispatch(getChats());
+      }
+    }, [chats]);
+
+    useEffect(() => {
+      dispatch(getMessages());
+    });
 
     const handleClose = () => setVisible(false);
     const handleOpen = () => setVisible(true);
