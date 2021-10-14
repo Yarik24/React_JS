@@ -30,10 +30,10 @@ function InputForm({ chatId, author }) {
                 label="Message"
                 variant="outlined"
                 size="small"
-                required
+                inputRef={inputRef}
                 className="form_text"
                 type="text"
-                value={nameValue}
+                value={textValue}
                 onChange={(e) => setTextValue(e.target.value)}
             ></TextField>
             <Button
