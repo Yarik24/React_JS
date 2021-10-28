@@ -1,0 +1,479 @@
+exports[`matches snapshot with no article 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <ul
+          class="header__links"
+        >
+          <li>
+            <a
+              href="/profile"
+              style="text-decoration: none;"
+            >
+              Профиль
+            </a>
+          </li>
+          <li>
+            <a
+              href="/chats"
+              style="text-decoration: none;"
+            >
+              Чаты
+            </a>
+          </li>
+          <li>
+            <a
+              href="/quotes"
+              style="text-decoration: none;"
+            >
+              Аниме цитаты
+            </a>
+          </li>
+        </ul>
+        <div
+          class="header__authBtns"
+        >
+          <button>
+            Вход
+          </button>
+        </div>
+      </header>
+      <div
+        class="quotes"
+      >
+        <p
+          class="quotes__p"
+        >
+          Send a blank message to get a quote from a random anime. Or enter the name of the anime in Latin for a quote from a specific anime.
+        </p>
+        <ul
+          class="quotes__ul"
+        />
+      </div>
+      <form
+        class="form"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root form__text css-p21bt9-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused css-bohyag-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="filled-basic-small"
+            id="filled-basic-small-label"
+          >
+            Message
+          </label>
+          <div
+            class="MuiFilledInput-root MuiFilledInput-underline MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall css-cio0x1-MuiInputBase-root-MuiFilledInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiFilledInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-c5v1qu-MuiInputBase-input-MuiFilledInput-input"
+              id="filled-basic-small"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root form__submit css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="submit"
+        >
+          Send
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <ul
+        class="header__links"
+      >
+        <li>
+          <a
+            href="/profile"
+            style="text-decoration: none;"
+          >
+            Профиль
+          </a>
+        </li>
+        <li>
+          <a
+            href="/chats"
+            style="text-decoration: none;"
+          >
+            Чаты
+          </a>
+        </li>
+        <li>
+          <a
+            href="/quotes"
+            style="text-decoration: none;"
+          >
+           
+           Anime quotes
+          </a>
+        </li>
+      </ul>
+      <div
+        class="header__authBtns"
+      >
+        <button>
+          Вход
+        </button>
+      </div>
+    </header>
+    <div
+      class="quotes"
+    >
+      <p
+        class="quotes__p"
+      >
+       
+       Send a blank message to get a quote from a random anime. Or enter the name of the anime in Latin for a quote from a specific anime.
+      </p>
+      <ul
+        class="quotes__ul"
+      />
+    </div>
+    <form
+      class="form"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root form__text css-p21bt9-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused css-bohyag-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="filled-basic-small"
+          id="filled-basic-small-label"
+        >
+          Message
+        </label>
+        <div
+          class="MuiFilledInput-root MuiFilledInput-underline MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall css-cio0x1-MuiInputBase-root-MuiFilledInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiFilledInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-c5v1qu-MuiInputBase-input-MuiFilledInput-input"
+            id="filled-basic-small"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root form__submit css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        Send
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Creating a snapshot of a component AnimeQuotes 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="header"
+      >
+        <ul
+          class="header__links"
+        >
+          <li>
+            <a
+              href="/profile"
+              style="text-decoration: none;"
+            >
+              Profile
+            </a>
+          </li>
+          <li>
+            <a
+              href="/chats"
+              style="text-decoration: none;"
+            >
+              Chats
+            </a>
+          </li>
+          <li>
+            <a
+              href="/quotes"
+              style="text-decoration: none;"
+            >
+              Anime Quotes
+            </a>
+          </li>
+        </ul>
+        <div
+          class="header__authBtns"
+        >
+          <button>
+            Entrance
+          </button>
+        </div>
+      </header>
+      <div
+        class="quotes"
+      >
+        <p
+          class="quotes__p"
+        >
+          Send a blank message to get a quote from a random anime. Or enter the name of the anime in Latin for a quote from a specific anime.
+        </p>
+        <ul
+          class="quotes__ul"
+        />
+      </div>
+      <form
+        class="form"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root form__text css-p21bt9-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused css-bohyag-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="filled-basic-small"
+            id="filled-basic-small-label"
+          >
+            Message
+          </label>
+          <div
+            class="MuiFilledInput-root MuiFilledInput-underline MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall css-cio0x1-MuiInputBase-root-MuiFilledInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiFilledInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-c5v1qu-MuiInputBase-input-MuiFilledInput-input"
+              id="filled-basic-small"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root form__submit css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="submit"
+        >
+          Send
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="header"
+    >
+      <ul
+        class="header__links"
+      >
+        <li>
+          <a
+            href="/profile"
+            style="text-decoration: none;"
+          >
+            Profile
+          </a>
+        </li>
+        <li>
+          <a
+            href="/chats"
+            style="text-decoration: none;"
+          >
+            Chats
+          </a>
+        </li>
+        <li>
+          <a
+            href="/quotes"
+            style="text-decoration: none;"
+          >
+            Anime Quotes
+          </a>
+        </li>
+      </ul>
+      <div
+        class="header__authBtns"
+      >
+        <button>
+          Entrance
+        </button>
+      </div>
+    </header>
+    <div
+      class="quotes"
+    >
+      <p
+        class="quotes__p"
+      >
+        Send a blank message to get a quote from a random anime. Or enter the name of the anime in Latin for a quote from a specific anime.
+      </p>
+      <ul
+        class="quotes__ul"
+      />
+    </div>
+    <form
+      class="form"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root form__text css-p21bt9-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-filled MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused css-bohyag-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="filled-basic-small"
+          id="filled-basic-small-label"
+        >
+          Message
+        </label>
+        <div
+          class="MuiFilledInput-root MuiFilledInput-underline MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall css-cio0x1-MuiInputBase-root-MuiFilledInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiFilledInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-c5v1qu-MuiInputBase-input-MuiFilledInput-input"
+            id="filled-basic-small"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root form__submit css-ke5b6m-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        Send
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
