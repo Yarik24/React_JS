@@ -1,4 +1,4 @@
-import CHANGE_NAME from "./Types/profileTypes";
+import CHANGE_NAME from "./types/profileTypes";
 
 const InitialState = { name: "No name" };
 
