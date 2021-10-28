@@ -1,0 +1,35 @@
+.auth {
+  position: absolute;
+  top: 70px;
+  right: 80px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  border-radius: 20px;
+  padding: 15px;
+  background-color: grey;
+  z-index: 1000;
+}
+
+.auth_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+}
+
+.auth_form > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.auth_input {
+  padding: 5px;
+}
+
+.auth_error {
+  color: red;
+}
+/*# sourceMappingURL=AuthPageStyle.css.map */
