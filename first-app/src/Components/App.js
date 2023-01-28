@@ -1,7 +1,6 @@
 import Message from "./Message/Message";
 import { useState, useEffect } from "react";
 import InputForm from "./InputForm/InputForm";
-import Chats from "./Chats/Chats";
 
 
 function App() {
@@ -18,15 +17,11 @@ function App() {
   
   return (
     <div className="App">
-      <Chats />
-      
-      <>
-        <Message messageList={messageList} />
-        <InputForm setMessageList={setMessageList} />
-      </>
-     
+      <Message messageList={messageList} />
+      <InputForm setMessageList={setMessageList} />
     </div>
   );
 }
+
 
 export default App;
