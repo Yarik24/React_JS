@@ -1,3 +1,4 @@
+
 import { memo, useState, useEffect, useRef } from "react";
 import {TextField, Button } from '@material-ui/core';
 import './InputFormStyle.css';
@@ -12,6 +13,7 @@ function InputForm({ setMessageList }) {
        inputRef.current?.focus();
       }, [textValue]);
     
+
     function submitHandler(e) {
     e.preventDefault();
     setMessageList((prev) => [...prev, { author: nameValue, text: textValue }]);
